@@ -33,6 +33,8 @@ const MapDrawer = () => {
           latlngs: layer._latlngs,
           color: layer.options.color,
           color_opacity: layer.options.opacity,
+          color_width: layer.options.width,
+          smoothFactor: layer.options.smoothFactor,
         },
       ]);
     }
@@ -99,14 +101,16 @@ const MapDrawer = () => {
                 onDeleted={_onDeleted}
                 draw={
                   {
-                    //   rectangle: false,
-                    //   circle: false,
-                    //   circlemarker: false,
+                       rectangle: false,
+                     circle: false,
+                       circlemarker: false,
+                       polygon:false,
                     //   marker: false,
                   }
                 }
               />
             </FeatureGroup>
+            
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           </MapContainer>
           {console.log(mapLayers)}

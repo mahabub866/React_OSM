@@ -17,8 +17,8 @@ function App() {
 {/* <MarkerMap/> */}
 {/* <GetLocation/>
  */}
- {/* <MapDrawer/> */}
- <CurrentPosition/>
+ <MapDrawer/>
+ {/* <CurrentPosition/> */}
 </>
   );
 }

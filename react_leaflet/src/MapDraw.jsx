@@ -38,6 +38,7 @@ const MapDrawer = () => {
         },
       ]);
     }
+    
   };
 
   const _onEdited = (e) => {

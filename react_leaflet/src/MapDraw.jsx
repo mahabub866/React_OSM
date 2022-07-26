@@ -33,7 +33,7 @@ const MapDrawer = () => {
           latlngs: layer._latlngs,
           color: layer.options.color,
           color_opacity: layer.options.opacity,
-          color_width: layer.options.width,
+          color_width: layer.options.weight,
           smoothFactor: layer.options.smoothFactor,
         },
       ]);
